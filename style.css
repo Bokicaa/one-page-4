@@ -1,0 +1,241 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Nocturne Serif";
+  background-color: #000;
+  color: #fff;
+  font-weight: 400;
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .navbar-nav .nav-item a {
+  transition: all 1.4s;
+  color: white;
+  font-size: 18px;
+}
+.navbar .navbar-nav .nav-item.active a {
+  transition: all 1.4s;
+  font-style: italic;
+  color: #55838a;
+}
+
+.all-descriptions {
+  position: relative;
+  height: 350px;
+}
+.all-descriptions .description {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  opacity: 0;
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 100%;
+}
+.all-descriptions .description h1 {
+  font-size: 50px;
+}
+.all-descriptions .description p {
+  font-size: 20px;
+}
+.all-descriptions .description:nth-child(1) {
+  opacity: 1;
+}
+
+.wrapper-slider {
+  position: relative;
+  transition: width 0.8s;
+  width: 60%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 11%;
+}
+.wrapper-slider .slider-content .switcher {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50%;
+  width: 100%;
+  border-bottom: 8px solid #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+.wrapper-slider .slider-content .switcher .images-front {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+}
+.wrapper-slider .slider-content .switcher .images-front .single-img {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-slider .slider-content .switcher .images-front .single-img.active {
+  display: block;
+}
+.wrapper-slider .slider-content .switcher-1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper-slider .slider-content .switcher-1 .images-back {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+}
+.wrapper-slider .slider-content .switcher-1 .images-back .single-img {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-slider .slider-content .switcher-1 .images-back .single-img.active {
+  display: block;
+}
+.wrapper-slider .slider-content .handler {
+  width: 100%;
+  height: 8px;
+  margin-top: -8px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: 1;
+}
+.wrapper-slider .slider-content .handler:hover {
+  cursor: grab;
+}
+.wrapper-slider .img-g {
+  display: block;
+  position: absolute;
+  left: -60px;
+  top: 42.5%;
+  width: 50px;
+  height: 50px;
+}
+.wrapper-slider .img-c {
+  display: block;
+  position: absolute;
+  right: -60px;
+  top: 42.5%;
+  width: 50px;
+  height: 50px;
+}
+
+.bottom-line {
+  margin-top: 4.5%;
+}
+.bottom-line .logo {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 20px;
+}
+.bottom-line .privacy {
+  display: inline;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+.bottom-line .privacy li {
+  display: block;
+  float: left;
+  margin: 0px 5px;
+}
+.bottom-line .privacy li a {
+  color: #fff;
+  font-size: 18px;
+}
+.bottom-line .wrapper-points {
+  overflow: hidden;
+}
+.bottom-line .wrapper-points .single-point {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.bottom-line .wrapper-points .single-point a {
+  display: block;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.bottom-line .wrapper-points .single-point a.active-point {
+  background-color: white;
+}
+
+.wrapp-loader {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  display: none;
+}
+.wrapp-loader .logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/loader/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapp-loader .cube {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.658);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 250px) {
+  .wrapper-slider {
+    margin-top: 0px;
+  }
+
+  .all-descriptions .description {
+    margin-left: 0%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
